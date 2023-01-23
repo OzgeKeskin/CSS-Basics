@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bu meta etiketi sayesinde responsive tasarım yapabiliyoruz.
+    This gives the browser instructions on how to control the page's dimensions and scaling.-->
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(247, 247, 72);
+      }
+      h1 {
+        display: none;
+      }
+      /*phone */
+      @media (max-width: 575px) {
+        #phone h1 {
+          display: block;
+        }
+      }
+      /*landscape (ekranı yan çevirdiğinde) */
+      /*tarayıcının genişliği min576 (576 ve 576den fazla ) ise aquamarine rengi olur. bunu media querie ile yapıyoruz. */
+      @media (min-width: 576px) and (max-width: 767px) {
+        #landscape h1 {
+          display: block;
+        }
+
+        body {
+          background-color: rgb(99, 107, 102);
+        }
+      }
+
+      /*tables */
+      @media (min-width: 768px) and (max-width: 991px) {
+        /*bu şekilde and ile kapsam da belirtebiliriz. */
+        #tables h1 {
+          display: block;
+        }
+        body {
+          background-color: rgb(235, 32, 52);
+        }
+      }
+
+      /*Desktop */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        #desktop h1 {
+          display: block;
+        }
+        body {
+          background-color: rgb(200, 244, 82);
+        }
+      }
+
+      /*large (geniş ekran cihazlar) */
+      @media (min-width: 1200px) and (max-width: 1399px) {
+        #large h1 {
+          display: block;
+        }
+        body {
+          background-color: rgb(235, 134, 32);
+        }
+      }
+
+      /*xlarge desktop */
+      @media (min-width: 1400px) {
+        #xlarge h1 {
+          display: block;
+        }
+        body {
+          background-color: rgb(240, 107, 209);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="phone"><h1>phone</h1></div>
+    <div id="landscape"><h1>landscape</h1></div>
+    <div id="tables"><h1>Tables</h1></div>
+    <div id="desktop"><h1>desktop</h1></div>
+    <div id="large"><h1>large</h1></div>
+    <div id="xlarge"><h1>xlarge</h1></div>
+  </body>
+</html>
