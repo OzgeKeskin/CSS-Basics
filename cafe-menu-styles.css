@@ -1,0 +1,88 @@
+h1,
+h2,
+p {
+  text-align: center;
+}
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+.established {
+  font-style: italic;
+}
+h1 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 30px;
+}
+body {
+  /* color: rgb(253, 253, 248); */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+.flavor,
+.dessert {
+  text-align: left;
+  width: 74%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+.item p {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+  border-width: 2px;
+}
+.bottom-line {
+  margin-top: 25px;
+}
+/*FOOTER*/
+footer {
+  font-size: 14px;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+/*Ziyaret edilmişse*/
+a:hover {
+  color: brown;
+}
+/*mouse üstüne geldiğinde*/
+a:active {
+  color: brown;
+}
+/* üstüne gelip basılı tutulduğunda*/
+
+.address {
+  margin-bottom: 5px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
