@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      /* css'te id etiketleri class ve normal etiketlere göre daha önceliklidir. mesela h1 etiketine 3 şekilde renk atayalım */
+
+      h1,
+      h2 {
+        color: burlywood;
+      }
+      /* etiket ile renk atadık. */
+      #page-title {
+        color: aqua;
+      }
+      /* id etiketiyle renk atadık */
+      .text-white {
+        color: blueviolet;
+      }
+      /* class ile renk atadık */
+
+      /*  normalde kodlar yukarıdan aşağı doğru gider ama csste bazı öncelikler vardır. Bu nedenle h1 etiketinin rengi aqua olacak. page title olmasa h1 etiketinin rengi blueviolet olurdu. */
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-white f20">
+          Blog sayfasına Hoş Geldiniz
+        </h1>
+      </section>
+
+      <!-- Eğer h1 içerisine style bilgisi tanımlarsak bu hepsinden daha öncelikli olur. Aşağıdaki örnekteki gibi.  -->
+
+      <section>
+        <h2 style="color: pink">Blog Sayfamın Ortası</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          aliquam accusamus delectus fugiat beatae nostrum?
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

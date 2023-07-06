@@ -1,0 +1,33 @@
+fontawesome ıcons webde arat ve siteye tıkla. oradan istediğin ikonları ücretsiz
+olarak kopyalayabilirsin. Kopyaladığın ikonu nerede kullanmak istiyorsan oraya
+link olarak bırak. örneğin uygulama son'da :
+<!-- 2. satırın 3. kolonu -->
+<div class="icon-box col">
+  <i class="fa-solid fa-right-to-bracket"></i>
+  <h3>Enjoy Movies</h3>
+  <p>Finally, you can watch the movie you want with pleasure.</p>
+</div>
+
+olarak kullandık. Bu ikonun sayfada görünmesi için kütüphanesini de eklemiş
+olmamız lazım. kütüphanesini eklemek için font awesome 6 cdn şeklinde bir arama
+yap. (6 şuanki sürüm) Daha sonra çıkan sitedeki linklerde birini kopyala.
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+Bu kütüphane linkini title'dan sonra yapıştır. İntegrity kısmından sonrasını
+siliyoruz çünkü bazen silmezsek hata verebiliyor.
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+şeklinde yapıştırmamız yeterli. Eğer sayfada ikon görünmezse aldığın link
+sürümünü değiştir. örneğin 6 sürümünü değil de 6.1 sürümünü vs. almayı dene.
+ikonun boyutunu büyütmek için fa-3x fa-4x gibi komutları ekleyebilirsin.
+<i class="fa-regular fa-face-smile fa-3x"></i>

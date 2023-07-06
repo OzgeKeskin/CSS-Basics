@@ -1,0 +1,38 @@
+input {
+  margin: 0.5em;
+}
+.input {
+  border: 1px solid #aaa;
+  outline: none;
+  font-size: inherit;
+  /*default olan font-size'ı uygular. */
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+input:focus {
+  border-color: rgb(70, 74, 215);
+  box-shadow: 0 0 5px 0 rgb(70, 74, 215);
+}
+.input-success {
+  border: 1px solid rgb(63, 212, 63);
+}
+.input-success:focus {
+  border-color: rgb(63, 212, 83);
+  box-shadow: 0 0 5px 0 rgb(63, 212, 83);
+}
+.input-error {
+  border-color: rgb(208, 28, 28);
+}
+.input-error:focus {
+  border-color: red;
+  box-shadow: 0 0 5px 0 red;
+}
+.input-large {
+  font-size: 1.25em;
+}
+.input-small {
+  font-size: 0.75em;
+}
+.input:disabled {
+  background-color: rgba(212, 210, 210, 0.798);
+}

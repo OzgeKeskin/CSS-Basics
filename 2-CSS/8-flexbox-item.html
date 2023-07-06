@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 400px;
+        background-color: #ccc;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+      }
+      .item {
+        width: 200px;
+        min-height: 100px;
+        background-color: orange;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .item1 {
+        flex-grow: 0;
+        order: 3;
+      }
+      .item2 {
+        flex-grow: 1;
+        flex-basis: 0;
+        order: 1;
+      }
+      .item3 {
+        flex-grow: 2;
+        /* eğer kutucuklardan sonra boş alan varsa 3. item kalan bütün boşluklara yayılır. */
+        flex-basis: 0;
+        /* kalan alan 2 ve 3. kutucuk arasında paylaştırılacak. bu olurken 2 paylık birim 3.ye 1 paylık ise 1.ye veriliyor. bu verilirken 3. kutu 2. kutunun 2 katı olmuş. kutucukarın bu şekilde neredeyse 2 kat olarak paylaşıtrılması için basis özelliğini kullanırız. bu özellik sayesinde kalan alanın margininden vs. kurtulunur ve tam kalan alan paylaştırılmaya çalışılır. */
+        order: 2;
+        /*kutucuklar 2-3-1 olarak sıralanır. */
+        /* flex-shrink: 5; bunu verdiğimiz zaman ekran küçülürken 3. kutucuk diğerlerine göre 5 kat daha hızlı küçülür. Eğer 0 verirsek 3. kutucuk hiç küçülmez. */
+        align-self: center; /*strecth özelliğinden vazgeçmiş oluyoruz. 3. kutucuk ortada konumlanıyor. veya flex-end vs. şeklinde kullanabiliriz. */
+        /*flex : grow / shrink / basis şeklinde ilerler. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+     
+     .box{
+        width: 60px;
+        height: 60px;
+        display: inline;
+        /*  Eğer inline olmayan elemanı inline yapmak istersek bunu kullanırız. Böylece tüm satırı kaplamak yerine eleman kadar yer kaplar. */
+        display: inline-block;
+        /* display: inline-block; yaparsak yan yana kutucuklar oluşur. Yani yine eleman kadar yer kaplar ama width ve height özellikleri de etkinleşir. */
+     }
+     #first{ background-color: red;}
+     #second{background-color: green;}
+     #third{background-color: pink;}
+
+</style>
+  </head>
+
+  <body>
+    <!-- nesneleri yan yana almak için bazı özellikleri kullanabiliriz. Bunlardan biri de display özelliğidir. -->
+
+    <!-- display özelliği için alabileceğimiz bazı propertyler var. Bunlardan bazıları :
+    display : none / inline / inline-block / block -->
+
+    <div id="container" >
+    <div class="box" id="first" >first</div>
+    <div class="box" id="second" >second </div>
+    <div class="box" id="third" >third</div>
+    <!--  bunlar bir satırlık yer kaplar. -->
+    </div>
+
+    <div>
+        <a href="">home</a>
+        <a href="">movies</a>
+        <a href="">Contact</a>
+        <!-- a etiketinin displayı inlinedır. Yani her bir elemanın genişliği tüm satırı değil eleman kadar yer kaplar. Inline elemanlara yükseklik ve genişlik veremeyiz. -->
+        <!-- style içerisine display-block yapıp a elemanlarının inline özelliğini inaktif edebiliriz. Böylece a elemanları alt alta gelir ve genişlik ve yükseklik özelliklerini artık kullanabiliriz.  -->
+    </div>
+
+
+    </main>
+  </body>
+</html>

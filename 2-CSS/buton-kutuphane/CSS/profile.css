@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+.header {
+  background-color: #f39c12;
+  color: white;
+  padding: 1.5rem;
+}
+.header-title {
+  text-align: center;
+  margin: 0;
+}
+.section {
+  padding: 1rem 2rem;
+}
+.section-content {
+  padding: 1rem;
+}
+.section-accent {
+  background-color: rgb(125, 218, 104);
+  color: white;
+}
+.section-talents,
+.section-projects {
+  list-style: none;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.section-accent h2 {
+  color: blueviolet;
+  margin: 0;
+}
+.section-projects {
+  color: gray;
+}
+.section-projects li {
+  margin-bottom: 2rem;
+  /*yazıdan sonra alt kısıma boşluk verir. */
+}
+.section-projects li:last-child {
+  margin: 0;
+  /*section-project altındaki li elemanının sonuncusuna margin vermeyiz. böylece en alttaki elemanın sonunda boşluk oluşmaz. */
+}
+.section-contact {
+  margin: 1rem 0;
+}
+.input {
+  border: 1px solid #c5c3c3;
+  outline: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  /*yukarıda bununla ilgili bir kural varsa onu kullan diyoruz. */
+  resize: none;
+  /*mesaj kutucuğu sonsuz büyümez belli bi şeyde kalır. */
+}
+.input:focus {
+  border-color: 1px solid #f39c12;
+  box-shadow: 0 0 5px 2px #f39c12;
+}
+.btn {
+  background-color: rgb(225, 154, 213);
+  border: 1px solid rgb(195, 85, 103);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: rgb(220, 255, 192);
+  box-shadow: 0 0 5px 0 rgb(220, 255, 192);
+}
+.footer {
+  background-color: #f39c12;
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+}

@@ -1,0 +1,17 @@
+/* external özelliklerini farklı dosyalarda kullanmak için böyle bir style dosyası oluşturduk. Buraya ortak olarak kullanmak istediğimiz özellikleri yazarız ve kullanmak istediğimiz klasörde bu dosyayı çağırırız. 
+ */
+section {
+  background-color: #8e2444;
+  color: aliceblue;
+  text-align: center;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+h2 {
+  color: blue;
+}
+
+/* artık bu özellikleri istediğimiz dosyada çağırıp kullanabiliriz. örneğin style-devam.html içerisinde bu özelliği kullanalım. */

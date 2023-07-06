@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        height: 500px;
+        background-color: #ccc;
+        border: 1px solid black;
+        display: flex;
+        /*container içindeki kutucuklar yan yana diziliyorken display flex itemlar soldan sağa akmaya başlar.
+        çünkü flex yapınca varsayılan değer olarak: */
+        flex-direction: row; /*(soldan sağa gider)(column yaparsak yukarıdan aşağıya gider)ve */
+        align-items: strecth; /*aktif olur. (olabilidiğince yüksekliğe yayılmaya çalışır.)  */
+        justify-content: center; /*tüm yapıyı bu sayede ortaya, sağa, sola,  space around, space between vs. taşıyabiliriz. */
+        flex-wrap: wrap; /* kutular büyüdükçe ve ekranı küçülttükçe taşmalar olabilir. taşmak yerine alt satıra vs. kaydırıp düzgün görünmesini istiyorsak wrap özelliğini aktifleştiririz. */
+      }
+      .item {
+        min-width: 100px;
+        min-height: 100px;
+        background-color: orange;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .item1 {
+        height: 120px;
+      }
+      .item2 {
+        height: 150px;
+      }
+      .item3 {
+        height: 180px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+  </body>
+</html>

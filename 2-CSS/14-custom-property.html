@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Custom Property</title>
+    <style>
+      :root {
+        --ana-renk: rgb(138, 89, 224);
+        --my-border: 3px solid purple;
+      }
+      h2 {
+        background-color: red;
+        color: var(--ana-renk);
+        /*eğer başka bir renk vermek istiyorsak : */
+        --ana-renk: pink;
+        /*genelden gelen değeri ezeriz ve bu bloğun içinde renk bu olur. */
+        padding: 0.5rem;
+      }
+      p {
+        color: var(--ana-renk);
+        border: var(--my-border);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Başlik</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      facere illo aperiam, neque eaque ipsum.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores illo
+      quisquam, unde iure voluptas animi tenetur ratione possimus odit
+      laudantium.
+    </p>
+
+    <!--Örneğin p ve h2 değerlerine color:blue yaptık fakat daha sonra değiştirmek istedik. bunları tek tek bulup değiştirmemiz gerekir. Bunun yerine şöyle bir şey yapabilriz. style kısmında root açıyoruz ve bir isimlendirme yapıp renk belirliyoruz. sonra o rengi kullanmak istediğimiz yerde verdiğimiz isimlendirmeyi kullanıyoruz. böylece ilerde değişiklik yapmak istersek direkt isimlendirmeden değiştiririz. otomatik olarak o isimi verdiğimiz her yerde de renk değişir.-->
+  </body>
+</html>

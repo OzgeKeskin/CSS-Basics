@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      a {
+        border: 1px solid rgb(56, 67, 189);
+        padding: 5px 8px;
+        display: inline-block;
+        /* a etiketine genişlik vermek için inline-block yaptık */
+        text-decoration: none;
+        /*  alt çizgiyi sildik. */
+        width: 60px;
+        text-align: center;
+        /* yazıları ortaladık. */
+      }
+      a:link {
+        /* ziyaret edilmemiş olan bir link için bu komutu kullanırız. */
+        color: chocolate;
+      }
+      a:visited {
+        /* ziyaret edilmiş bir link için bu komutu kullanırız.  */
+        color: rgb(117, 50, 50);
+        background-color: gray;
+      }
+      a:hover {
+        /* a etiketinin üzerine geldiğimiz zaman bu etiket gerçekleşir. Tıklamayıp beklediğimizde  */
+        color: wheat;
+        background-color: rgb(82, 190, 136);
+      }
+      a:active {
+        color: rgb(183, 46, 207);
+        /*  a etiketinin üzerine gelip beklediğimiz anda da bu etiket gerçekleşir. Basılı tutup beklediğimiz zaman. */
+      }
+
+      div:hover p {
+        display: block;
+        /* 2- div etiketi üzerine gelindiği zaman p etiketini block yap diyoruz. yani div etiketi üzerine geldiğimiz anda p etiketi görünür olacak.  */
+      }
+      p {
+        display: none;
+        /* 1-  click here yazısına tıklandığında paragrafın görünmesini istiyoruz. Bu durumda önce paragrafın görünümünü none yaparız yani başlangıçta paragraf görünmez. */
+      }
+    </style>
+  </head>
+  <body>
+    <!--  pseudo class aracılığıyla sayfa daha önce ziyaret edildiyse rengini değiştirebiliriz vs.  -->
+    <a href="border1.html">Home</a>
+    <a href="boxModel1.html">Products</a>
+    <a href="combinators1.html">About</a>
+    <br /><br />
+
+    <div>
+      Click Here!
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+        voluptatum?
+      </p>
+    </div>
+
+    <!--  diğer özellikleri de incele sayfalardan. -->
+  </body>
+</html>

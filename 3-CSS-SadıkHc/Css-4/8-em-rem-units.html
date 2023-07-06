@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 10px;
+        /* kullanıcı ayarlardan font büyüklüğünü değiştirirse bu bizim sayfamızda değişmez. fakat değişmesi gerekir bunun olması için 10pxi yüzde olarak yazmamız gerekir yani 10px yerine 62.5% yazmalıyız.*/
+      }
+      body {
+        font-size: 1.6rem;
+        /*html'in 10px'ine göre body etiketi kendini 1.3rem olarak ayarlar. 2rem 20px 3 rem 30px diyebiliriz çünkü htmle 10px verdik. 10.2 vs.
+        bu durumda 576pxten küçük bir ekranda font size 1.6*10=16px olarak görünür.
+        
+         */
+      }
+
+      @media (min-width: 576px) {
+        html {
+          font-size: 18px;
+        }
+        #kutu-1 h2 {
+          font-size: 1.8rem;
+        }
+        /* 1.8*18 = 32.4 font size olur. */
+      }
+
+      @media (min-width: 768px) {
+        html {
+          font-size: 25px;
+        }
+        /*25*1.8=45 olur. (h2 için)  kutu-1 için 1.6*25=40 olur.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kutu-1">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        assumenda esse harum inventore nesciunt error repudiandae sint omnis
+        cumque labore!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 5px;
+        /* kelimeler arası boşluk */
+        letter-spacing: 2px;
+        /* harfler arası boşluk */
+      }
+      p.about::first-line {
+        /* classı about olan p etiketini seç diyoruz. */
+
+        color: green;
+      }
+      p::first-letter {
+        /* her paragrafın ilk harfini böyle büyütebiliriz. */
+        font-size: 48px;
+      }
+      ::selection {
+        background-color: pink;
+        /*  metinde herhanbi bir kısma fare ile seçtiğimizde o kısım pembe olur. fosforlu kalemle çizmek gibi düşün. */
+      }
+      p::after {
+        content: "\2615";
+        /* paragrafların sonuna bu şekilde emoji ekleyebiliriz.  */
+        font-size: 45px;
+        color: palevioletred;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- tüm etiketlerin ilk satırını bold yapar. pseudo class belirlerken tek : kullanırız. element belirlerken ise :: kullanırız. -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius
+      eos sequi quis quisquam adipisci ducimus, itaque amet recusandae
+      praesentium ab reiciendis debitis iste consequuntur quae ullam nemo. Sint,
+      aut?
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quod
+      at aperiam incidunt optio adipisci quam, harum deserunt, iusto numquam qui
+      vel nobis explicabo id eos consequuntur corrupti eveniet ratione.
+    </p>
+  </body>
+</html>

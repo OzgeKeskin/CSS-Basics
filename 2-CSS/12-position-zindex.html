@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 32px;
+        height: 200vh;
+        margin: 1rem;
+        border: 2px solid red;
+      }
+      .parent {
+        border: 2px solid blue;
+        padding: 2rem;
+        background-color: chocolate;
+        position: relative;
+      }
+      .item1 {
+        background-color: darkmagenta;
+        padding: 2rem;
+        position: relative;
+        right: 20px;
+        /*position relative yapınca o itemi sağdan soldan üstten ve alttan oynatabiliriz. position relative dedikten sonra right: 20px dediğimizde aslında sağdan 20px uzaklaş demiş oluyoruz. */
+      }
+      .item2 {
+        padding: 2rem;
+        background-color: teal;
+        position: absolute;
+        /*bir itema absolute verdiğimizde sanki artık döküman üzerinde yokmuş gibi davranılır. yani item2 yokmuş gibi olur ve item3 onun yerine geçer. üst üste gelirler. */
+        bottom: 20px;
+        left: 20px;
+        /* absolute dedikten sonra bottom vs. değerler verirsek kutucuk parent değerlerine bakar. eğer onlarda position: static dışında olan bir yapı varsa ona göre konumlanır. ama eğer yoksa (ki burada yok) o zaman görünen ana ekrana göre kendini konumlandırır. */
+        /*eğer parent kısmını position: relative yaparsak o zaman item2de ana taşıyıcı içerisinde kendini bottom ve lefte göre konumlandırır. */
+      }
+      .item3 {
+        padding: 2rem;
+        background-color: gold;
+        position: fixed;
+        /*item3 ekrandan kalkmış gibi davranır. sanki item3 divi silinmiş gibi olur. absolute gibidir tek farkı şudur: 
+        absolute değerler görünen alanda dururlar. sayfa kaydıkça sayfayla birlikte aşağı kaymazlar. fixed dediğimizde ise sayfa kaydıkça fixed verilen değer de kayar. yani kendini ekranın o kısmına sabitler.*/
+        /*position: sticky ise relative ve fixed karışımı gibidir. bir itema sticky değeri verirsek o item kendini olduğu yere sabitler ve ekran aşağı kaydıkça altındaki itemlerin üzerine gelir. fakat itemler bitene kadar bunu yapar. fixed gibi ekran kaydıkça sürekli aşağı kaymaz. */ 
+        /*en üstte olmasını istediğimiz elemanların z indexini diğerinden büyük yapmalıyız.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="items">
+        Ana Taşıyıcı
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+      </div>
+    </div>
+  </body>
+</html>

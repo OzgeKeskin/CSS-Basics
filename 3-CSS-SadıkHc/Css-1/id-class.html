@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      /* 1. örnek */
+      h1 {
+        color: brown;
+        text-align: center;
+      }
+      /* 2. örnek */
+
+      .blog-middle {
+        color: aqua;
+        text-align: left;
+      }
+      /* 3. örnek */
+
+      #blog-end {
+        color: aquamarine;
+        text-align: left;
+      }
+
+      /* Son örnek */
+      .f20 {
+        font-size: 20px;
+      }
+      .f18 {
+        font-size: 12px;
+      }
+      .text-white {
+        color: blue;
+      }
+      #page-title {
+        border-bottom: 1px solid red;
+      }
+      #page-subtitle {
+        border-bottom: 3px solid salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class açmak için . koyarız. Örneğin
+    .blog-post yaparsak blog-post sınıfı açmış oluruz.-->
+    <!-- farklı şekillerde css kodlarımızı şekillendirebiliriz. 
+    1- önceden öğrendiğimiz gibi head içerisine h1 etiketi açıp kodlarımızı yazabiliriz. -->
+
+    <h1>Sayfa Girişi</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore omnis
+      pariatur iste reiciendis culpa magni illum perferendis voluptatum itaque
+      molestias.
+    </p>
+
+    <!-- 2- head içerisine class oluşturup kodlarımızı yazabiliriz. -->
+
+    <h1 class="blog-middle">Orta Bölüm</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum a nobis
+      esse quasi quas perferendis.
+    </p>
+    <!-- 3- Head içerisinde kodda belirlediğimiz id'yi çağırıp kodlarımızı yazabiliriz.  -->
+
+    <h1 id="blog-end">Son Bölüm</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem est
+      veritatis, quis cum blanditiis molestias, fugit impedit maxime dolorem
+      aliquid minima ut? Repellat assumenda perspiciatis commodi qui eius
+      tempore, hic non perferendis, esse amet earum illum quaerat voluptatum
+      consectetur! Optio aspernatur omnis enim tempora similique delectus
+      architecto magnam consequuntur dolore officiis corporis, neque magni eum
+      quia obcaecati aperiam modi repellat!
+    </p>
+
+    <!-- Son olarak hepsini birlikte kullanmayı görelim. -->
+
+    <main>
+      <section>
+        <h1 id="page-title" class="text-white f20">
+          Blog sayfasına Hoş Geldiniz
+        </h1>
+      </section>
+
+      <section>
+        <h2 id="page-subtitle" class="text-white f18">Blog Sayfamın Ortası</h2>
+      </section>
+    </main>
+  </body>
+</html>

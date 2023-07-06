@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* html {
+      height: 100%;
+    } */
+    body {
+      margin: 0;
+    }
+    #header {
+      position: relative;
+      background-color: rgb(248, 8, 8);
+      height: 50vh;
+      /*width: 90vw; */
+      background-image: url("view.jpg");
+      background-position: center;
+    }
+    #header h1 {
+      margin: 0;
+      position: absolute;
+      /* htmlye göre konumlandırma yapar bodye göre yapmaz. resim boyutu küçüldüğünde yazı da küçülmez. Eğer header kısmında position relative yaparsak o zaman h1 etiketi kapsayıcısı olan header'e göre konumlanır.*/
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* top ve left özelliklerini kullandıktan sonra yazı tam olarak ortaya gelmez. Sonuçta içeriğin kapladığı bir alan daha var bunu da hesaba katmak için transform translate özelliğini kullanırız ve bu saydede yazı tam ortalanır. */
+      font-size: 80px;
+      color: blanchedalmond;
+    }
+  </style>
+  <body>
+    <div id="header">
+      <h1>Background Text</h1>
+    </div>
+    <!-- normalde height gibi özellikleri 500px vs. şeklinde belirtiyorduk fakat bu şekilde yaptığımızda sayfası küçültünce resim de onunla birlikte küçülmez 500px olarak kalmaya devam eder hatta scroolbar çıkar. Biz sayfayı küçülttükçe resim boyutunun da küçülmesi için kapsayıcı elemanlara 100% veririz. HTML'e 100% ve body'e 100% verdik. Bu sayede sayfa küçüldükçe resim boyutu da ona göre küçülür.-->
+    <!-- ya da bunun yerine viewport özelliğini kullanabiliriz. height:50vh (viewportheight)yani görünen alanın yüksekliğinin %50'sini al demektir. resim görünen alanın %50'sini kaplayacak şekikde ekranımızda görünür.-->
+    <!-- genişlik olarak vw(viewpoortwidth) özelliğini kullanabiliriz.-->
+  </body>
+</html>

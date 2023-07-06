@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear floating</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        float: right;
+      }
+      .container {
+        background-color: yellow;
+      }
+
+      #box1 {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">kutu1</div>
+      <div class="box">kutu2</div>
+      <div class="box">kutu3</div>
+      <div style="clear: both"></div>
+      <!-- yukarıdaki float özelliğini kapatırsak yazımız artık divlerin altına yazılır ve container'a verdiğimiz renk de uygulanır.
+    ya da contaier'ın yanına class ekle "clearfix" olarak. sonra style içine
+    .clearfix::after { 
+    content:""
+    display : block
+    clear:both 
+}
+yap. clearfix sınıfından sonra yani divlerden çıktıktan sonra content'ı boş eleman olarak belirle ve block element yap yani tüm satırı kapsasın ve iki tarafını da clear et.  -->
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+      reiciendis.
+    </p>
+  </body>
+</html>

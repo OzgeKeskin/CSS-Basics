@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      #showcase {
+        background-color: aquamarine;
+        padding: 20px;
+      }
+      #how-it {
+        background-color: aqua;
+      }
+      h1 {
+        background-color: darkcyan;
+        padding: 15px;
+        border: 8px solid white;
+      }
+      /* border etiketi ile 4 köşeden bir kenarlık vermiş oluruz. h1 etiketinin 4 köşesini kenarlıklı yaptık. Çizginin tipi solid olsun dedik. Yani düz bir çizgi. ve çizginin rengi beyaz olsun dedik.*/
+      /* Css border tiplerine bakıp kesikli,düz,gölgeli vs. olarak yapabilirsin. */
+      h2 {
+        background-color: bisque;
+        border-top: 5px solid red;
+        border-bottom: 5px solid rebeccapurple;
+        border-top-width: 55px;
+        /* üst çizginin kalınlığı */
+        border-radius: 5px;
+        /* köşeleri yuvarlamamızı sağlar 4 köşeden yuvarlar. sadece üsleri yuvarlamak istersek left-radius vs. yapabiliriz. */
+        border-bottom-right-radius: 20px;
+      }
+      nav {
+        background-color: salmon;
+        padding: 13px;
+      }
+      a {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome</h1>
+      </section>
+
+      <section id="how-it">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

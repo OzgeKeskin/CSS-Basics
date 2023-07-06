@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Margin and Padding</title>
+    <style>
+      #p1 {
+        border: 2px solid blueviolet;
+        /*border-width : 2px border-style:solid vs. yapmak yerine tek satırda bu şekilde yazabiliriz. */
+        padding: 20px;
+      }
+      #p2 {
+        border: 5px solid rgb(180, 213, 244);
+        padding: 20px;
+        border-width: 10px 300px;
+        /*yukarıdan aşağı 10px , soldan sağa 300px kenarlık*/
+        margin-top: 60px;
+        /*mesela p1 ve p2 arasında boşluk bırakmak istersek margin kullanırız. yani amrgin içerik ile içeriğin dışındaki boşluğu ayarlar. */
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 80px;
+      }
+      #p3 {
+        border-top: 5px dotted rgb(217, 127, 66);
+        border-bottom: 15px teal dashed;
+        border-left: 15px solid;
+        border-right: 15px solid;
+        border-color: red blue green orange;
+        /* saat düzeni gibi düşün. 12-3-6-9 yani sırayla üst sağ alt sol olarak sıralanır. */
+        padding: 20px;
+        margin: 30px;
+      }
+      #p4 {
+        border: 5px rgb(255, 0, 170) solid;
+        border-radius: 15px;
+        /*radius daha yumuşak kenarlar yapar. kenarları ovalleştirir. */
+        padding: 15px;
+        margin: 20px 80px;
+      }
+      #p5 {
+        border: 5px solid yellowgreen;
+        border-top-left-radius: 30px;
+        padding: 15px;
+      }
+      #orta {
+        width: 300px;
+        background-color: antiquewhite;
+        height: 300px;
+        box-sizing: border-box;
+        /*normalde margin auto yaptıktan sonra padding değeri de verince kutunun şeklinde verilen padding'e göre oynamalar olabailir. 300px width değeri belirlemiş olsak bile 100px padding verince kutumuz daha da genişleyebilir. eğer bunun omasını istemiyorsak box-sizing:border-box özelliğini kullanırız. böylece kutumuz her zaman sabit kalır.  */
+
+        margin: auto;
+        /*eğer içeriği sağdan ve soldan ortalamak istiyorsak margin : auto yaparız. otomatik olarak içerik sayfanın en ortasına gelir. */
+        padding: 80px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- c ve enter'a bas yorum satırı oluyor. -->
+    <p id="p1">Bu bir deneme paragrafi</p>
+    <p id="p2">Bu 2. bir deneme paragrafidir</p>
+    <p id="p3">Bu 3. bir deneme paragrafidir.</p>
+    <p id="p4">Bu 4. bir deneme paragrafidir.</p>
+    <p id="p5">Bu 5. bir deneme paragrafidir.</p>
+    <div id="orta">Ortalanacak yapi</div>
+  </body>
+</html>

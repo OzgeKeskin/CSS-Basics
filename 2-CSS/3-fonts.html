@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text formatlama ve Font kullanimi</title>
+    <style>
+      .paragraf1 {
+        color: rgb(79, 158, 132);
+        background-color: bisque;
+        font-size: 32px;
+        text-align: justify;
+        /* justify sayesinde metine sağdan ve soldan eşit boşluk bırakır. */
+      }
+      .paragraf2 {
+        text-decoration: line-through;
+        /*underline veya overline de yapabiliriz. */
+      }
+      .paragraf3 {
+        text-transform: capitalize;
+        /*lowercase : hepsini küçük harf yapar
+        uppercase: hepsini büyük harf yapar.
+        capitalize: baş harfleri büyük yapar. */
+        text-indent: 100px;
+        /*ilk harfin önüne 100px boşluk koyar. */
+        letter-spacing: 5px;
+        /*her bir harfin arasına 5pxlik boşluk koyar. */
+        font-size: 32px;
+        line-height: 2;
+        /*her bir satır arasındaki boşluk 2 kat olacak şekilde artar. */
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .paragraf4 {
+        word-spacing: 10px;
+        /*her bir kelime arasına 10px boşluk koyar. */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .paragraf5 {
+        text-shadow: 2px 2px red;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="paragraf1" id="paragrafim1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,
+      est.
+    </p>
+    <p class="paragraf2" id="paragrafim2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum,
+      deleniti deserunt ratione ea nesciunt rerum quidem obcaecati laboriosam.
+      Provident.
+    </p>
+    <p class="paragraf3" id="paragrafim3">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut laborum
+      harum deleniti temporibus quae. Illum.
+    </p>
+    <p class="paragraf4" id="paragrafim4">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, a?
+    </p>
+    <p class="paragraf5" id="paragrafim5">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS OLCU BİRİMLERİ</title>
+    <style>
+      .parent {
+        border: 2px solid red;
+        width: 300px;
+        font-size: 40px;
+      }
+      .item {
+        background-color: orange;
+        height: 30px;
+        margin: 10px 0;
+      }
+      .item-yuzde {
+        width: 50%;
+      }
+      .item-view-width {
+        width: 50vw;
+        /*çalıştığı cihazın ekranına bakar ve ona göre konumlandırır. bu nedenle yukarıdaki çubuk ile genişliği tam anlamıyla aynı olmaz. eğer sayfa başına margin:0 padding:0 yaparsak ikisi de eşit olur. */
+        height: 20vh;
+      }
+      .rem {
+        font-size: 2rem;
+      }
+      .em {
+        font-size: 2em;
+      }
+      /*rem ve em'e bu değerleri verince font-size'ın iki katını alır. aralarındaki fark ise şudur :
+      rem: varasayılan font-size değerinin 2 katını alır. (16px'in)
+      em: kapsayıcı elemana verdiğimiz font-size'ın 2 katını alır. yukarıda parent içine yazdığımız 40px'in 2 katını alır.
+      Genelde rem kullanırız. */
+    </style>
+  </head>
+  <body>
+    <div class="item item-yuzde">yuzde 50</div>
+    <div class="item item-view-width">yuzde 50 view width</div>
+    <div class="parent">
+      <div class="item rem">1 REM</div>
+      <div class="item em">1 EM</div>
+      <div class="item item-yuzde">yuzde 50</div>
+      <!-- parent'in yüze 50sini alır.-->
+    </div>
+  </body>
+</html>

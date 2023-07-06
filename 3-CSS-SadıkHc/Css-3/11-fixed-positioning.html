@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        height: 2000px;
+      }
+      body {
+        margin: 0;
+      }
+
+      .box {
+        padding: 10px;
+        border: 5px solid #6d5b95;
+        margin-bottom: 10px;
+      }
+      .navbar {
+        background-color: yellow;
+        position: fixed;
+        width: 100%;
+        top: 0;
+      }
+      .content {
+        background-color: pink;
+        position: fixed;
+        width: 100%;
+        z-index: -2;
+        bottom: 0;
+      }
+      .footer {
+        background-color: orange;
+        position: absolute;
+        width: 100%;
+        z-index: -5;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box navbar">Navbar</div>
+      <div class="box content">Content</div>
+      <div class="box footer">Footer</div>
+    </div>
+
+    <!--Biz bir elemana position özelliklerini tanımladığımızda aynı zamanda bu elemanlara z-index de verebiliyoruz. örneğin content için position:absolute yaptık. bu durumda content, footer'ın üstüne çıkar ve footer geri planda kalır. Footer'ı üste almak istersek 2 yöntem kullanabiliriz. 
+    1. yöntem : content bilgisine z-index belirleyip - bir değer verebiliriz. (-1,-2..)
+    2. yöntem : footer'a position:absolute verip content bilgisinden daha yüksek bir değer verebiliriz. (+1,+2...)
+    kısacası z index'i büyük olan üstte görünür.-->
+
+    <!--
+        position:fixed bilgisini content'e verdik. top:0 yaptığımız zaman bu content body'nin en üstüne sabitlenir. Aynı zamanda bottom:0 yapınca da en alt sabitlenir. fixed bilgisi verdiğimiz şey sabit kalır. content için position: fixed ve bottom:0 bilgilerini verdik. viewport (görünen alan) üzerinde çalışıyoruz. scroolbar'ı her kaydırdığımızda viewport da değiştiği için content bilgisi hep sabit kalır ve her zaman sayfanın en altında yer alır. Yani fixed özelliği verdiğimiz şey scroolbar'dan etkilenmez.
+    -->
+  </body>
+</html>

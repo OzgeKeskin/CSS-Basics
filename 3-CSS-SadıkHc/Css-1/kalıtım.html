@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      body {
+        font-size: 15px;
+        color: rgb(71, 46, 200);
+      }
+      p {
+        color: red;
+      }
+      p {
+        border: 1px solid green;
+      }
+      em {
+        border: inherit;
+        color: initial;
+      }
+      /*  Bazı etiketler direkt inherit edilir (kalıtılır). Mesela p etiketi içerisine belirlediğimiz özellikler direkt bütün paragrafı etikler. paragrafın içerisine em, stong gibi şeyler belirlersek bunlar da renk özelliğini alır, yani kalıtır. Fakat bazı etiketler inherit edilmez. Örneğin border etiketi. Border etiketi inherit edilmediği için em içerisine işlemez diğer paragraf kısmına işler. Fakat yine de inherit etmkek istersek yukarıdaki gibi em açıp yapabiliriz. */
+      /* inithial özelliği atarsak p etiketinin color özelliğini alma tarayıcı özelliğini al demiş oluruz yani em içerisindeki yazı siyah görünür. */
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-white f20">
+          Blog sayfasına Hoş Geldiniz
+        </h1>
+      </section>
+
+      <section>
+        <h2>Blog Sayfamın Ortası</h2>
+        <p>
+          Lorem ipsum dolor <em> sit amet </em> consectetur adipisicing elit.
+          Accusantium aliquam accusamus delectus fugiat beatae nostrum?
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

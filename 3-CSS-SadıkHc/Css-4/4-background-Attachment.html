@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .bg {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /*Background resmini fixedledik yani sabitledik. Scroll aşağı inse bile resim oynamıyor. efektli gibi oluyor.*/
+      }
+      .bg-image1 {
+        height: 100vh;
+
+        background-image: url("p1.jpg");
+      }
+      .bg-image2 {
+        background-image: url("p2.jpg");
+        height: 50vh;
+      }
+      .caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* ya da left: 0; */
+        transform: translate(-50%, -50%);
+        /*width: 100%;
+          text-align: center; yazabiliriz. transform: translete yerine. */
+      }
+      .caption .border {
+        font-size: 40px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-transform: uppercase;
+        /*Başlık harflerini büyük yazar. */
+        letter-spacing: 10px;
+        /* harfler arasındaki aralıklar artar. */
+      }
+      .box {
+        color: white;
+        background-color: rgb(137, 37, 107);
+        text-align: center;
+        padding: 50px 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg bg-image1">
+      <div class="caption">
+        <span class="border"> Lorem, ipsum.</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia
+        labore numquam nostrum ut commodi deleniti autem dignissimos consectetur
+        animi. Iste, quibusdam esse repellendus vitae dignissimos consectetur
+        dolor. Nobis dolor atque facere tenetur dicta harum vel possimus
+        suscipit expedita quis.
+      </p>
+    </div>
+
+    <div class="bg bg-image2">
+      <div class="caption">
+        <span class="border"> Lorem, ipsum.</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia
+        labore numquam nostrum ut commodi deleniti autem dignissimos consectetur
+        animi. Iste, quibusdam esse repellendus vitae dignissimos consectetur
+        dolor. Nobis dolor atque facere tenetur dicta harum vel possimus
+        suscipit expedita quis.
+      </p>
+    </div>
+  </body>
+</html>

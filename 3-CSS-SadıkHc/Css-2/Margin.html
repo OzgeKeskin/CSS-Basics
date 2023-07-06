@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <section>
+      <style>
+        * {
+          margin: 0;
+        }
+        /*  yıldız etiketi body etiketini ezer. Burda göstermek istediğimiz şey şu :
+        Margin kutucuğumuzun en dışındaki katman ve sayfada belli bir yer kaplıyor. Boxmodel.html sayfasında inceleyebilirsin. Biz burda margin değerini 0 atıyoruz bu nedenle marginden gelen boşluk silinir ve yazılar bir bütün gibi görünür. */
+        #showcase {
+          background-color: #62dda8;
+          margin: 20px;
+          /* 4 köşeden (sağ,sol,alt,üst) 30px'lik bir boşluk bırakır. */
+        }
+        #WAboutCarettas {
+          background-color: #8ccae9;
+          margin: 20px;
+          margin-right: 45px;
+
+          margin: 0px auto;
+          width: 500px;
+          /* üstten alttan 0px boşluk sağdan soldan otomatik boşluk bırakır. genişliği 500px yapar. */
+        }
+        /* 2 yazı ortasında 42pxlik boşluk bırakmaz bunun aksine en çok hangisi verilmişse o kadar bırakır yani 30pxlik boşluk olur. Eğer biz mesela WAboutCarettas kısmının sağ tarafında daha fazla boşluk bırakmak istiyorsak margin-right'e değer atamamız gerekir. */
+
+        /* üst -sağ - alt - sol : margin bilgisini tek satırda tanımalmak istersek saat yönüne göre ayarlarız. yani
+        margin : 30px 20px 15px 16px  gibi bir şey yazarsak üstten 30px boşluk, sağdan 20px boşluk... diye devam eder. */
+
+        /* margin : 20px 30px dersek üst-alt : 20px
+        sağ-sol : 30px anlamına gelir. */
+      </style>
+    </section>
+  </head>
+
+  <body>
+    <main>
+      <section id="showcase">
+        <h1>Travel Diary On Turkey</h1>
+      </section>
+
+      <section id="WAboutCarettas">
+        <h2>A Day With Caretta Carettas!</h2>
+      </section>
+    </main>
+  </body>
+</html>

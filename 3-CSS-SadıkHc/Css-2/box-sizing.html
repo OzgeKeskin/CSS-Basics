@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #showcase {
+        background-color: aquamarine;
+        padding: 20px;
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+        border: 5px solid rebeccapurple;
+
+        /*  width değeri %100 verdiğimiz zaman ve içerik sayfanın tamamını kaplar. bir bir de üstüne border ve padding değerleri ekliyoruz bu değerler %100ün üstüne eklenir ve içerik sayfadan taşar. Bir scroll bar çıkar ve sayfayı kaydırırsak ancak içeriğin tamamını görmüş oluruz. Bu box-sizing-content-box özelliğinden kaynaklarnır. bu özellik aktiftir. Biz içeriğimizi tam bir sayfaya sığdırmak istiyorsak box-sizing-border-box kullanmalıyız. Tüm koda uygulamak istediğimiz için style altında *{} etiketi içerisine yazarız. */
+      }
+      #how-it {
+        background-color: aqua;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome</h1>
+      </section>
+
+      <section id="how-it">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

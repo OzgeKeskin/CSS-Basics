@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        border: 5px solid gray;
+        padding: 5px;
+      }
+      img {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- resimin üzerine nasıl yazı yazabiliriz?
+    şuana kadar block elemanlarda bu özelliği kullanmayı öğrendik. peki inline elemanlarda floating özelliğini nasıl uygularız? -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto!</p>
+    <p class="clearfix">
+      <img src="frog.jpg" alt="" />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit modi
+      in deserunt dolor voluptas officiis numquam, alias, asperiores, reiciendis
+      tenetur odio ut nobis similique id neque corrupti quos odit.
+    </p>
+    <!-- clearfix yapmamız resmi ve yazıyı bir kutucuk içerisine alır. bundan sonra gelecek olan örneğin başka bir paragrafı bu içeriğimizin altına yazmamızı sağlar. -->
+  </body>
+</html>

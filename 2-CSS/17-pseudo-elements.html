@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*elementler :: ile sınıflar : ile belirtilir. */
+      p::first-letter {
+        font-size: 6rem;
+      }
+      p::first-line {
+        background-color: red;
+      }
+      p::selection {
+        background-color: rgb(151, 151, 199);
+        color: rgb(54, 27, 228);
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+      .box::before {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: yellow;
+        content: " ";
+      }
+      .box::after {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        content: " ";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Özge</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a
+      optio iusto amet, natus ipsum quibusdam voluptates voluptatum sequi sit
+      fugit iure eveniet nesciunt id aliquid suscipit maiores placeat labore
+      nihil? Nobis expedita consequatur itaque accusantium cum, quae autem minus
+      fugiat maxime facilis vero repellendus ut. Sequi nobis possimus totam?
+    </p>
+    <p style="font-size: 24px">
+      konu ile ilgili daha fazla bilgi için :
+      <a
+        href="https://medium.com/@onur.kaplan/frontend-u%C4%9Fra%C5%9Fan%C4%B1n%C4%B1n-gizli-kahramanlar%C4%B1-before-after-karde%C5%9Fler-be8e0c3ca346"
+        >Frontend Uğraşanının Gizli Kahramanları ::before & ::after Kardeşler</a
+      >
+    </p>
+  </body>
+</html>

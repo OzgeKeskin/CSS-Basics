@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.top-bar {
+  background-color: #3d5467;
+  color: rgb(192, 51, 75);
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 3rem;
+  padding: 1rem;
+  text-transform: upper;
+  flex-grow: 1;
+}
+.menu {
+  flex-grow: 3;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  flex-grow: 1;
+}
+.menu ul li a {
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+}
+.banner {
+  background: url("./images/288-536x354.jpg") no-repeat;
+  background-size: cover;
+}
+.banner-text {
+  padding: 10% 0;
+}
+.banner-text-item {
+  margin: auto;
+  width: 70%;
+}
+.banner-text-item h2 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: #3d5467;
+  text-transform: uppercase;
+}
+.banner-text-item p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+}
+.main-content {
+  display: flex;
+  padding: 2% 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-item {
+  padding: 2%;
+  line-height: 1.5;
+  text-align: center;
+  flex: 1;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.main-item h2 {
+  color: rgb(192, 51, 75);
+}
+.main-item p {
+  margin-top: 0.5rem;
+}
+.form-container {
+  background: url(./images/istockphoto-864283670-1024x1024.jpg) no-repeat;
+  background-size: cover;
+}
+.form-container h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(192, 51, 75);
+}
+.form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  /*ekranın %80ine dağılır ve auto sayesinde de ekranın tam ortasına gelir. */
+}
+.form input,
+form textarea {
+  padding: 1rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid rgb(192, 51, 75);
+}
+.form button {
+  background-color: rgb(192, 51, 75);
+  padding: 1rem;
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  width: 50%;
+  border: none;
+}
+/*Responsive yapma */
+@media all and (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .menu ul li {
+    padding: 5px;
+  }
+  .banner h2 {
+    font-size: 2rem;
+  }
+  .banner-text-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .main-content {
+    flex-direction: column;
+    padding: 2%;
+  }
+}
+@media (max-width: 1440px) {
+}

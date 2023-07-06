@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .my-checkbox {
+        position: absolute;
+        left: -99999px;
+        opacity: 0;
+      }
+      .my-checkbox + label {
+        cursor: pointer;
+        /*fare üzerine gelince tıklama işareti şekline gelir. */
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
+      .my-checkbox + label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        display: inline-block;
+        border-radius: 0.2em;
+        margin-right: 0.5em;
+        border: 0.05em solid black;
+      }
+      /*label'den hemen önce gelen kutuların üzerinde gezdiğimde ... yap. */
+      .my-checkbox + label:hover::before {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="cb1" class="my-checkbox" disabled checked />
+    <label for="cb1">Checkbox 1</label>
+    <br />
+
+    <input type="checkbox" id="cb2" class="my-checkbox" disabled />
+    <label for="cb2">Checkbox 2</label>
+    <br />
+
+    <input type="checkbox" id="cb3" class="my-checkbox" />
+    <label for="cb3">Checkbox 3</label>
+    <br />
+
+    <input type="checkbox" id="cb4" class="my-checkbox" />
+    <label for="cb4">Checkbox 4</label>
+  </body>
+</html>

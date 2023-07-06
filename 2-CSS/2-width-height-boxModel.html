@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width Height and Box Model</title>
+    <style>
+      #container {
+        max-width: 960px;
+        min-width: 600px;
+        /*max alaxağı değer 960 eğer ekran 960ın altına düşerse içerik de sığmaya çalışır. min küçüleceği değer ise 600 yani ekran 600den daha da fazla küçülürse artık scrollbar çıkar. */
+
+        /*width: 50%;
+        ekranın %50sini kapsasın diyebiliriz.*/
+        height: 80%;
+        /* height: 300px;
+        örneğin 300 kelimelik bir içerik girince 300 px olarak belirlediğimiz heightten taşar. bunun olmaması için % olarak belirlemek daha iyi olur.*/
+        background-color: thistle;
+      }
+      #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        margin: 20px;
+        padding: 10px;
+        border: 5px teal solid;
+        box-sizing: border-box;
+        /*200e 200lük bir kutu oluşur fakat kapladığı alan bununla sınırlı kalmaz çünkü sağdan saoldan vs. margin değerleri var, padding ve border değerleri var yani 200pxden fazla alan kaplayan bir kutucuğumuz olur. Eğer biz her şeyiyle birlikte (padding,margin...) toplam olarak 200px yer kaplayan bir kutucuk istiyorsak :
+        box-sizing: border-box yaparız. */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, numquam.
+    </div>
+    <div id="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum,
+      itaque commodi facilis nam cupiditate perferendis rerum corporis voluptas
+      ipsa sed ipsum tempora, vero quisquam ducimus corrupti deleniti fugit
+      nesciunt saepe est recusandae expedita labore aspernatur? Impedit tempora,
+      nulla enim atque exercitationem ab minima quis, adipisci ipsam architecto
+      repellendus officia amet in eaque facilis consequatur? Reprehenderit,
+      eligendi voluptatem. Cumque a cum modi voluptate. Dignissimos iusto et
+      voluptatem minus, error, hic consequuntur perferendis accusamus odit odio
+      nisi sint, quo impedit mollitia ipsam vitae voluptates. Saepe, incidunt?
+      Perspiciatis corrupti soluta quaerat repudiandae, atque minima velit, nam
+      impedit molestiae, adipisci labore consequuntur nulla dolorum expedita
+      ullam! Perferendis blanditiis impedit fuga magnam esse est, libero
+      asperiores adipisci minima temporibus hic commodi itaque. Maiores nobis
+      voluptate repudiandae corporis consectetur iste molestiae accusamus
+      temporibus harum molestias itaque quos aliquam laborum quasi fuga enim
+      libero rem, voluptates odio quod earum omnis minima? Consequuntur
+      perspiciatis officiis aliquam asperiores dolorum, laudantium earum at,
+      veniam libero nam fugiat optio odio voluptas commodi magni esse ad dolores
+      illo fuga voluptatem minima nostrum ratione iusto molestiae? Cum error
+      laudantium pariatur assumenda libero distinctio eos, cumque dolorum. Illo
+      a laboriosam ad quasi rem sit quo consequuntur voluptate non vitae
+      cupiditate nulla blanditiis hic molestiae, sapiente eius delectus!
+      Quisquam iure eveniet vero aut fugiat at dolor veniam delectus cumque
+      dignissimos tenetur, iusto maiores provident totam quasi, sunt dicta
+      voluptatem est consequuntur nemo laudantium nulla. Repellendus fuga illum
+      laborum, natus ab iure corporis vitae architecto molestias voluptatum
+      unde. Et quibusdam, fuga optio quo delectus atque natus veniam rerum quasi
+      placeat, esse recusandae asperiores nemo inventore excepturi tempore porro
+      blanditiis veritatis itaque! Beatae illo expedita voluptatem adipisci
+      deleniti unde tempora iste. Minus perferendis velit praesentium ex qui
+      quisquam nulla suscipit optio quas harum officia, earum, illo assumenda
+      repellat, dignissimos commodi eligendi! Quod autem dolore hic vitae?
+    </div>
+  </body>
+</html>

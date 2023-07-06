@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        float: right;
+      }
+      #container {
+        background-color: yellow;
+      }
+
+      #box1 {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        block elemanlar bütün bir satır kadar yer kaplar ve alt alta gelirler. Genişlik ve yükseklik vererek kapladığı alanı değiştirebiliriz.
+        inline elemanlar ise bulundukları alan kadar yer kaplarlar ve yan yana sıralanırlar. (a etiketleri ve span etiketleri) inline elemanlara genişlik ve yükseklik veremeyiz.
+        inline block olarak tanımlayarak genişlik ve yükseklik verebiliriz. satırda yan yana gelirler. Aralarında varsayılan olarak 1px'lik boşluk oluşur. etiketleri yan yana aldığımıda bu boşluk ortadan kalkar.
+        Bu inline block ve inline elemanları text align özelliği ile hareket ettirebiliriz. 
+        block elemanları hareket ettirmek için ise floating kullanırız. 
+    -->
+
+    <div id="container">
+      <div class="box" id="box1">kutu1</div>
+      <div class="box">kutu2</div>
+      <div class="box">kutu3</div>
+    </div>
+    <!-- style içerisindeki .container sınıfındaki yellow rengi artık kutucuklara uygulanmaz çünkü biz kutucukların normal container özelliğini bozduk birisini sola ikisini sağa çektik. artık bir container içerisinde yer almıyor. rengi uygulamak için farklı bir şey yaparız. Clear floating dersine bak.-->
+  </body>
+</html>

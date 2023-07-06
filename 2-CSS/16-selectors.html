@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*divin içinde bulunan direkt çocuğu olan spanları seç. */
+      div > span {
+        color: red;
+      }
+      /*h2den sonra gelen ve h2 ile kardeş olan p etiketlerini seçer. 1-2-3-4-5 h2 ile kardeştir. */
+      h2 ~ p {
+        background-color: blue;
+      }
+      /*divden hemen sonra gelen 1. pyi seçer. içindekileri seçmez divden sonra gelenleri seçer. 3 ve 5*/
+      div + p {
+        background-color: green;
+      }
+      /*sınıfı h2sinif olan bütün h2leri seç. */
+      h2.h2sinif {
+        background-color: orange;
+      }
+      /*sınıfı h2sinif olmayan bütün h2leri seç */
+      h2:not(h2sinif) {
+        background-color: pink;
+      }
+
+      /*bu kuralı sadece type değeri text olanlara uygula demiş oluyoruz.*/
+      input[type="text"] {
+        background-color: goldenrod;
+      }
+      /*input değeri checked edilmedidiyse 50pxlik margin değeri uygular. checked edildiği zaman varsayılan değere geri döner.*/
+      input:not(:checked) {
+        margin: 50px;
+      }
+      input[data-margin] {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" />
+    <input type="text" />
+    <input data-margin="20" type="text" />
+    <h2 class="h2sinif" id="h2ID">Başlık h2</h2>
+    <h2>Başlık h2 2</h2>
+    <h2>Başlık h2 3</h2>
+    <p class="paragrafSinifi">paragraf 1</p>
+    <p>paragraf 2</p>
+    <div>
+      <p>Bu etkilenmeyecek</p>
+      <span>
+        Dışardaki span elementi
+        <span>içerdeki span elementi</span>
+      </span>
+      <p>Bu etkilenecek</p>
+      <span>2. span elementi</span>
+    </div>
+    <p>paragraf 3</p>
+    <p>paragraf 4</p>
+    <div>div2</div>
+    <div>div3</div>
+    <p>paragraf 5</p>
+  </body>
+</html>
